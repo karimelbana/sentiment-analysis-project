@@ -1,4 +1,4 @@
-import plotly.express as px
+from sklearn.linear_model import LogisticRegression
 
 import pandas as pd
 
