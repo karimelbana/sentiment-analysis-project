@@ -1,2 +1,4 @@
 *.env
 notebooks/
+data/
+.DS_Store
