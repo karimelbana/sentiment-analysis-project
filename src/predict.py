@@ -10,7 +10,6 @@ def load_model(model_path: str) -> Any:
     """Load and return a trained classifier."""
     return load(model_path)
 
-
 def predict_texts(
         classifier: Any,
         input_texts: list[str]
@@ -23,7 +22,6 @@ def predict_texts(
     else:
         probs = [None] * len(input_texts)
     return preds.astype(int).tolist(), probs
-
 
 def format_prediction_lines(
         texts: list[str],
@@ -39,7 +37,6 @@ def format_prediction_lines(
             lines.append(f"{pred}\t{prob:.3f}\t{text}")
     return lines
 
-
 def main(
         model_path: str,
         input_texts: list[str]
@@ -48,7 +45,6 @@ def main(
     preds, probs = predict_texts(classifier, input_texts)
     for line in format_prediction_lines(input_texts, preds, probs):
         print(line)
-
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
