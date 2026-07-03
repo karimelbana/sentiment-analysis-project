@@ -3,3 +3,4 @@ notebooks/
 data/
 .DS_Store
 .python-version
+src/__pycache__/
