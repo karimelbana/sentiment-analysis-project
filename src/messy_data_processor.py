@@ -1,11 +1,11 @@
 import pandas as pd
-
+import os
 
 def process_data(df: pd.DataFrame) -> pd.DataFrame:
     """Cleans and processes the dataframe."""
     print("Starting data processing!")
 
-    my_variable = 123 # noqa: F841
+    my_variable = 123
 
     # Clean column names by stripping whitespace and converting to lower case
     df.columns = df.columns.str.strip().str.lower()
