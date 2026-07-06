@@ -52,4 +52,4 @@ if __name__ == "__main__":
     parser.add_argument("text", nargs="+", help="One or more texts to score")
     args = parser.parse_args()
     main(model_path=args.model, input_texts=args.text)
-    print('Sentiment is served 🧑‍🍳')
+    print('Sentiment is served 🧑‍🍳 🥗')
