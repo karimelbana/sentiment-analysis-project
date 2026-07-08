@@ -37,6 +37,7 @@ jobs:
       - name: Run linter and formatter checks
         run: |
           ruff check .
+
   test:
     runs-on: ubuntu-latest
     steps:
@@ -69,3 +70,10 @@ jobs:
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
+
+      - name: Build and push Docker image
+        uses: docker/build-push-action@v5
+        with:
+          context: .
+          push: true
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/sentiment-analysis-repo:gh-actions
