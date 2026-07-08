@@ -14,7 +14,7 @@ def load_model(model_path: str) -> Any:
 def predict_texts(
     classifier: Any, input_texts: list[str]
 ) -> tuple[list[int], list[float | None]]:
-    """Return labels and probability-of-positive for each text from the texts."""
+    """Return labels and probability-of-positive for each text."""
     preds: NDArray[Any] = classifier.predict(input_texts)
     if hasattr(classifier, "predict_proba"):
         probs_arr: NDArray[np.float64] = classifier.predict_proba(input_texts)[:, 1]
