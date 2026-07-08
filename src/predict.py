@@ -51,4 +51,4 @@ if __name__ == "__main__":
     parser.add_argument("--model", default="models/sentiment.joblib")
     parser.add_argument("text", nargs="+", help="One or more texts to score")
     args = parser.parse_args()
-    main(model_path=argszzz.model, input_texts=args.text)
+    main(model_path=args.model, input_texts=args.text)
