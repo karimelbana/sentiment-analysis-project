@@ -4,6 +4,7 @@ from src.predict import load_model, predict_texts
 
 MODEL_PATH = "models/sentiment.joblib"
 
+
 @pytest.mark.parametrize(
     "text, expected",
     [
