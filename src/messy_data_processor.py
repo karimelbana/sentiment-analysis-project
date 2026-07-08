@@ -1,5 +1,5 @@
 import pandas as pd
-import os
+
 
 def process_data(df: pd.DataFrame) -> pd.DataFrame:
     """Cleans and processes the dataframe."""
