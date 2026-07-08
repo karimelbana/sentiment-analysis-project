@@ -2,7 +2,7 @@ import pandas as pd
 
 
 def process_data(df: pd.DataFrame) -> pd.DataFrame:
-    """Cleans and processes the dataframe."""
+    """Cleans and processes the sales dataframe."""
     print("Starting data processing!")
 
     # Clean column names by stripping whitespace and converting to lower case
