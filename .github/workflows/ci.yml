@@ -77,4 +77,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/sentiment-analysis-repo:gh-actions
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/sentiment-analysis-repo:gh-actions-v2.0
